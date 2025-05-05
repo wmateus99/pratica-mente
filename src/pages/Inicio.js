@@ -17,7 +17,7 @@ export default function Inicio() {
             <div className={styleContenInicio.leftLimited}></div>
             <div className={styleBoxLeft.boxLeft}>
                 <div className={styleBoxLeft.logoLeft}>
-                    <img src={LogoBlack}/>
+                    <img src={LogoBlack} alt="Logo"/>
                 </div>
                 <CardText
                 titleCard="Jogo de Digitação"
