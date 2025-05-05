@@ -34,9 +34,9 @@ export default function Inicio() {
                         Aponte a câmera do seu celular para o
                         QRcode e fique por dentro de todas as notícias!
                     </p>
-                    <img src={PefilTsi}/>
+                    <img src={PefilTsi} alt="QRcode"/>
                 </div>
-                <img className={styleBoxRigth.ImgFundo} src={FormaDeformadaBottom}/>
+                <img className={styleBoxRigth.ImgFundo} src={FormaDeformadaBottom} alt="Image"/>
             </div>
         </section>
     )
