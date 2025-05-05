@@ -1,0 +1,19 @@
+.CardTextBox {
+    max-width: 320px;
+    min-height: 200px;
+}
+.boxTitleLink {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #000;
+    justify-content: space-between;
+}
+
+.boxTitleLink a {
+    font-size: 35px;
+    color: #000;
+}
+
+.CardTextBox p {
+    text-align: justify;
+}

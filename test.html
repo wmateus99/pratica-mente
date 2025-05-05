@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .tooltip {
+          position: relative;
+          cursor: pointer;
+        }
+        
+        .tooltip::after {
+          content: attr(data-title);
+          position: absolute;
+          top: -30px;
+          left: 0;
+          background: black;
+          color: white;
+          padding: 5px 8px;
+          border-radius: 5px;
+          white-space: nowrap;
+          opacity: 0;
+          pointer-events: none;
+          transition: 0.3s;
+        }
+        
+        .tooltip:hover::after {
+          opacity: 1;
+        }
+        </style>
+</head>
+<body>
+    <p class="tooltip" data-title="Texto personalizado!">Passe o mouse aqui</p>
+</body>
+</html>
