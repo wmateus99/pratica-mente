@@ -36,7 +36,7 @@ export default function Inicio() {
                     </p>
                     <img src={PefilTsi} alt="QRcode"/>
                 </div>
-                <img className={styleBoxRigth.ImgFundo} src={FormaDeformadaBottom} alt="Image"/>
+                <img className={styleBoxRigth.ImgFundo} src={FormaDeformadaBottom} alt="Ilustracao de fundo"/>
             </div>
         </section>
     )
