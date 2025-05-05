@@ -1,6 +1,6 @@
 // Styles
 import styleSobre from "../assets/styles/StyleSobre.module.css"
-import styleBox from "../assets/styles/StyleBoxRigth.module.css"
+// import styleBox from "../assets/styles/StyleBoxRigth.module.css"
 import styleContenInicio from "../assets/styles/ContentInicio.module.css"
 
 export default function Inicio() {

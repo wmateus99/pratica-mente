@@ -1,4 +1,4 @@
-import CardText from "./componets_pages/CardText"
+// import CardText from "./componets_pages/CardText"
 
 export default function Atividades() {
     return (

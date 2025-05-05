@@ -1,6 +1,6 @@
 import "./App.css";
 import NavMenu from "./components/nav_menu/NavMenu"
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
 import Inicio from "./pages/Inicio"
 import Atividades from "./pages/Atividades"

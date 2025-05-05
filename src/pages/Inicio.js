@@ -5,7 +5,7 @@ import PefilTsi from "../assets/svg/PerfilTsi.svg"
 import LogoBlack from '../assets/svg/LogoBlack.svg';
 
 // Styles
-import style from "../assets/styles/CardText.module.css"
+// import style from "../assets/styles/CardText.module.css"
 import styleBoxLeft from "../assets/styles/StyleBoxLeft.module.css"
 import styleBoxRigth from "../assets/styles/StyleBoxRigth.module.css"
 import styleContenInicio from "../assets/styles/ContentInicio.module.css"
