@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo de Digitação</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Adicionar biblioteca html2pdf -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+    <!-- YouTube Music Button -->
+    <a href="https://music.youtube.com" target="_blank" class="music-btn" title="Abrir YouTube Music">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+            <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z" fill="currentColor"/>
+        </svg>
+    </a>
+
+    <div class="container">
+        <h1>Jogo de Digitação</h1>
+        
+        <!-- Theme Switcher -->
+        <div class="theme-switcher">
+            <div class="theme-option theme-dark" data-theme="dark"></div>
+            <div class="theme-option theme-light" data-theme="light"></div>
+            <div class="theme-option theme-cyan active" data-theme="cyan"></div>
+            <div class="theme-option theme-pink" data-theme="pink"></div>
+            <div class="theme-option theme-green" data-theme="green"></div>
+            <div class="theme-option theme-orange" data-theme="orange"></div>
+        </div>
+        
+        <div class="game-info">
+            <div class="info-item">
+                <span>Nível:</span>
+                <span id="level">1</span>
+            </div>
+            <div class="info-item">
+                <span>Tempo:</span>
+                <span id="time">90</span>s
+            </div>
+            <div class="info-item">
+                <span>Pontuação:</span>
+                <span id="score">0</span>
+            </div>
+        </div>
+        
+        <!-- Barra de progresso -->
+        <div class="progress-container">
+            <div id="progress-bar" class="progress-bar"></div>
+        </div>
+        <div class="progress-text">
+            <span id="words-count">0</span>/<span id="words-target">10</span> palavras para o próximo nível
+        </div>
+
+        <div class="game-area">
+            <div id="word-display" class="word-display">Pressione Iniciar</div>
+            <input type="text" id="word-input" class="word-input" autocomplete="off" disabled>
+        </div>
+
+        <div class="controls">
+            <button id="start-btn" class="btn">Iniciar</button>
+            <button id="pause-btn" class="btn" disabled>Pausar</button>
+        </div>
+        
+        <!-- Painel de Ranking com aviso de reset -->
+        <div id="ranking" class="ranking-panel" title="Caso consiga utrapassar alguém do ranking, avise o professor para ele atualizar!"></div>
+        <div class="rank-reset-notice">
+            <span>Ranking reseta em: </span>
+            <span id="reset-countdown" class="countdown-days"></span>
+            <span> dias</span>
+        </div>
+    </div>
+
+    <script src="palavras.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

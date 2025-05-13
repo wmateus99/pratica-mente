@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prática de Mouse para Iniciantes</title>
+    <link rel="stylesheet" href="mouse-styles.css">
+</head>
+<body>
+    <a class="btn-voltar" href="/index.html">
+        <img src="/asstes/_svg/logo_icone_praticamente_black.svg" alt="Voltar">
+    </a>
+    <div class="container">
+        <h1>Prática de Mouse para Iniciantes</h1>
+        
+        <div class="level-selector">
+            <button class="level-btn active" data-level="level1">Nível 1: Cliques</button>
+            <button class="level-btn" data-level="level2">Nível 2: Arrastar</button>
+            <button class="level-btn" data-level="level3">Nível 3: Duplo Clique</button>
+            <button class="level-btn" data-level="level4">Nível 4: Rolar</button>
+            <button class="level-btn" data-level="level5">Nível 5: Precisão</button>
+        </div>
+        
+        <div class="stats">
+            <div class="stat">
+                <span>Pontuação:</span>
+                <span id="score">0</span>
+            </div>
+            <div class="stat">
+                <span>Nível:</span>
+                <span id="current-level">1</span>
+            </div>
+        </div>
+        
+        <div class="game-area">
+            <div id="game-display" class="game-display">
+                Clique em "Iniciar" para começar a praticar!
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button id="start-btn" class="btn">Iniciar</button>
+            <button id="reset-btn" class="btn" disabled>Reiniciar</button>
+        </div>
+        
+        <div class="navigation">
+            <a href="digitacao.html" class="nav-link">Ir para Prática de Digitação</a>
+        </div>
+    </div>
+    
+    <script src="mouse-script.js"></script>
+</body>
+</html>
