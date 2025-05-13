@@ -1,0 +1,40 @@
+.content-inicio {
+    display: grid;
+    min-height: 100vh;
+    grid-template: 1fr / 65px 1fr 1fr;
+}
+.content-atividades {
+    display: grid;
+    min-height: 100vh;
+    grid-template: 1fr / 65px 1fr;
+}
+.content-textos {
+    display: grid;
+    min-height: 100vh;
+    grid-template: 1fr / 65px 1fr;
+}
+.content-sobre {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+}
+.left-limited {
+    background-color: transparent;
+}
+
+@media (max-width: 700px) {
+    .content-inicio {
+        display: grid;
+        min-height: 100vh;
+        grid-template: 1fr 1fr / 1fr;
+    }
+    .content-atividades {
+        grid-template: 1fr / 1fr;
+    }
+    .content-textos {
+        grid-template: 1fr / 1fr;
+    }
+    .left-limited {
+        display: none;
+    }
+}

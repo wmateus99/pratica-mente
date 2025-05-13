@@ -1,0 +1,42 @@
+.inicio-box-rigth {
+    position: relative;
+    display: flex;
+}
+
+.img-fundo {
+    right: 0px;
+    bottom: 0px;
+    width: 800px;
+    z-index: -9999;
+    position: absolute;
+}
+
+
+.box-tsi {
+    background-color: brown;
+}
+
+.box-tsi p {
+    right: 320px;
+    bottom: 70px;
+    width: 300px;
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    text-align: justify;
+}
+
+.box-tsi img {
+    right: 100px;
+    bottom: 20px;
+    width: 200px;
+    position: absolute;
+}
+
+@media (max-width: 700px) {
+    .box-tsi p {
+        right: 100px;
+        bottom: 250px;
+        width: 200px;
+    }
+}

@@ -1,0 +1,88 @@
+.container-atividades {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20% 10% 100%;
+    grid-template-areas: "s s" "m m" " l r";
+}
+
+.box-subnavbar {
+    grid-area: s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgb(158, 222, 135); */
+}
+.subnavbar {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    /* height: 40%; */
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 10px;
+    border-radius: 30px;
+    background: #0c7289;
+}
+.subnavbar button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: transparent;
+}
+.subnavbar button i {
+    color: #fff;
+    font-size: 30px;
+}
+.subnavbar button p {
+    color: #fff;
+    font-size: 11px;
+}
+
+/* Estilos da Área do Nome do Módulo */
+.box-modulo-name {
+    grid-area: m;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(135, 176, 222); */
+}
+.name-modulo {
+    width: 80%;
+    border-bottom: 3px solid #00000025;
+}
+/*  */
+
+/* Estilos do Lados Esquerdo e Direito */
+.list-box-left {
+    grid-area: l;
+    border-right: 3px solid #00000025;
+    /* background-color: rgb(222, 135, 216); */
+}
+.list-box-rigth {
+    grid-area: r;
+    /* background-color: rgb(201, 41, 70); */
+}
+.list-box-left, .list-box-rigth {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media (max-width: 700px) {
+    .container-atividades {
+        grid-template-columns: 1fr;
+        grid-template-rows: 20% 10% 1fr 1fr;
+        grid-template-areas: "s" "m" " l" "r";
+    }
+    .subnavbar {
+        width: 90%;
+        border-radius: 15px;
+    }
+    .name-modulo {
+        width: 90%;
+    }
+    .list-box-left {
+    border-right: none;
+}
+}
