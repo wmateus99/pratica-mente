@@ -13,7 +13,7 @@ export default function Card(title, link, text) {
 // Cads de Cada Módulo do Lado Esquerdo
 export const WindowsLeft = {
     att01: Card("Pratique Atalhos", "/pages/assets_atividades/_windows/atalhos-teclado.pdf", "O objetivo da atividade é treinar o uso de atalhos do teclado, manipulação de texto no Word e Bloco de Notas, além de ensinar a alternar entre janelas e áreas de trabalho no Windows, usando tarefas simples do dia a dia."),
-    att02: Card("Revise Assustos", "/pages/assets_atividades/_windows/atividade-revisao.pdf", "Praticar habilidades básicas de manipulação de arquivos, download de imagens da internet, edição de texto no Bloco de Notas e criação de uma colagem simples no Paint.")
+    att02: Card("Revise Assuntos", "/pages/assets_atividades/_windows/atividade-revisao.pdf", "Praticar habilidades básicas de manipulação de arquivos, download de imagens da internet, edição de texto no Bloco de Notas e criação de uma colagem simples no Paint.")
 }
 export const ExcelLeft = {
     att01: Card("Atividade 01", "#", "Isso é uma descrição de Excel!"),
