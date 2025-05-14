@@ -12,8 +12,8 @@ export default function Card(title, link, text) {
 
 // Cads de Cada Módulo do Lado Esquerdo
 export const WindowsLeft = {
-    att01: Card("Atividade 01", "#", "Isso é uma descrição de Windows!"),
-    att02: Card("Atividade 02", "#", "Isso é uma descrição de Windows!")
+    att01: Card("Pratique Atalhos", "/pages/assets_atividades/_windows/atalhos-teclado.pdf", "O objetivo da atividade é treinar o uso de atalhos do teclado, manipulação de texto no Word e Bloco de Notas, além de ensinar a alternar entre janelas e áreas de trabalho no Windows, usando tarefas simples do dia a dia."),
+    att02: Card("Revise Assustos", "/pages/assets_atividades/_windows/atividade-revisao.pdf", "Praticar habilidades básicas de manipulação de arquivos, download de imagens da internet, edição de texto no Bloco de Notas e criação de uma colagem simples no Paint.")
 }
 export const ExcelLeft = {
     att01: Card("Atividade 01", "#", "Isso é uma descrição de Excel!"),
@@ -21,7 +21,7 @@ export const ExcelLeft = {
 }
 export const WordLeft = {
     att01: Card("Atividade 01", "#", "Isso é uma descrição de Word!"),
-    att02: Card("Atividade 02", "#", "Isso é uma descrição de Word!")
+    att02: Card("Atividade 02", "#", "Isso é uma descrição de Word")
 }
 export const InternetLeft = {
     att01: Card("Atividade 01", "#", "Isso é uma descrição de Internet!"),
@@ -43,7 +43,7 @@ export const ExtracurricularLeft = {
 
 // Cads de Cada Módulo do Lado Direito
 export const WindowsRigth = {
-    att01: Card("Atividade 01", "#", "Isso é uma descrição de Windows!"),
+    att01: Card("Pratique o Mouse", "/pages/assets_atividades/_windows/pratica-do-mouse.pdf", "Nesta atividade, você vai treinar o uso do mouse: clicar, clicar duas vezes, arrastar e soltar, escolhendo menus, abrindo programas, inserindo e salvando arquivos — tudo para ganhar precisão, rapidez e confiança no manuseio do computador."),
     att02: Card("Atividade 02", "#", "Isso é uma descrição de Windows!")
 }
 export const ExcelRigth = {

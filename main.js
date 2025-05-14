@@ -9,7 +9,7 @@ const labelModulo = document.getElementById('label-modulo')
 
 // Itens Padrão
 labelModulo.innerHTML = "Windows"
-boxLeft.innerHTML = WindowsLeft.att01
+boxLeft.innerHTML = WindowsLeft.att01 + WindowsLeft.att02
 boxRigth.innerHTML = WindowsRigth.att01
 
 // Função que alterna entre os Módulos
@@ -17,7 +17,7 @@ btnAtividades.forEach((btn, index) => {
     btn.addEventListener("click", () => {
         if (index == 0) {
             labelModulo.innerHTML = "Windows"
-            boxLeft.innerHTML = WindowsLeft.att01
+            boxLeft.innerHTML = WindowsLeft.att01 + WindowsLeft.att02
             boxRigth.innerHTML = WindowsRigth.att01
         }
         else if (index == 1) {
