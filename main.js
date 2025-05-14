@@ -22,13 +22,13 @@ btnAtividades.forEach((btn, index) => {
         }
         else if (index == 1) {
             labelModulo.innerHTML = "Excel"
-            boxLeft.innerHTML = ExcelLeft.att01
-            boxRigth.innerHTML = ExcelRigth.att01
+            boxLeft.innerHTML = ExcelLeft.att01 + ExcelLeft.att02 + ExcelLeft.att03
+            boxRigth.innerHTML = ExcelRigth.att01 + ExcelRigth.att02 + ExcelRigth.att03
         }
         else if (index == 2) {
             labelModulo.innerHTML = "Word"
-            boxLeft.innerHTML = WordLeft.att01
-            boxRigth.innerHTML = WordRigth.att01
+            boxLeft.innerHTML = WordLeft.att01 + WordLeft.att02 + WordLeft.att03
+            boxRigth.innerHTML = WordRigth.att01 + WordRigth.att02
         }
         else if (index == 3) {
             labelModulo.innerHTML = "Internet"
