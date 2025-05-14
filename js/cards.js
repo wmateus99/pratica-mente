@@ -30,7 +30,7 @@ export const InternetLeft = {
     att02: Card("Atividade 02", "#", "Isso é uma descrição de Internet!")
 }
 export const PowerPointLeft = {
-    att01: Card("Atividade 01", "#", "Isso é uma descrição de PowerPoint!"),
+    att01: Card("Crie sua Apresentação", "/pages/assets_atividades/_powerpoint/mostre_sua_criatividade.pdf", "Esta atividade estimula sua criatividade e suas habilidades no PowerPoint. Você deverá escolher um assunto de seu interesse, pesquisar sobre ele e transformar um conteúdo amplo em uma apresentação simples, visualmente atrativa e fácil de entender."),
     att02: Card("Atividade 02", "#", "Isso é uma descrição de PowerPoint!")
 }
 export const PhotoshopLeft = {
@@ -62,8 +62,7 @@ export const InternetRigth = {
     att02: Card("Atividade 02", "#", "Isso é uma descrição de Internet!")
 }
 export const PowerPointRigth = {
-    att01: Card("Atividade 01", "#", "Isso é uma descrição de PowerPoint!"),
-    att02: Card("Atividade 02", "#", "Isso é uma descrição de PowerPoint!")
+    att01: Card("Mais em Breve", "#", "Isso é uma descrição vazia de PowerPoint!")
 }
 export const PhotoshopRigth = {
     att01: Card("Atividade 01", "#", "Isso é uma descrição de Photoshop!"),
