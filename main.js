@@ -47,8 +47,8 @@ btnAtividades.forEach((btn, index) => {
         }
         else if (index == 6) {
             labelModulo.innerHTML = "Extracurricular"
-            boxLeft.innerHTML = ExtracurricularLeft.att01
-            boxRigth.innerHTML = ExtracurricularRigth.att01
+            boxLeft.innerHTML = ExtracurricularLeft.att01 + ExtracurricularLeft.att02 + ExtracurricularLeft.att03
+            boxRigth.innerHTML = ExtracurricularRigth.att01 + ExtracurricularRigth.att02
         }
         else {
             labelModulo.innerHTML = '<span style="color:red;" >Algo deu errado no código fonte!</span>'

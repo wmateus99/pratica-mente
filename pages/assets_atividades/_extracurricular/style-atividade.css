@@ -1,44 +1,213 @@
-*::selection {
-    background-color: aqua;
+:root {
+    /* Color Variables */
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #2ecc71;
+    --warning-color: #f39c12;
+    --danger-color: #e74c3c;
+    --light-bg: #f5f5f5;
+    --dark-text: #333;
+    --white: white;
+    --light-border: #ddd;
+    --warning-bg: #fff8ee;
+    --danger-bg: #ffeeee;
+    --success-bg: #eefff5;
+    --code-bg: #f8f8f8;
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: url("../../../../img/fundo.png");
-    background-size: 100%;
+    background-color: var(--light-bg);
+    color: var(--dark-text);
+    line-height: 1.6;
 }
 
-.subs, .main, .footer, .respostas {
-    background: #fff;
-    border-radius: 10px;
-    margin: 5px;
-    padding: 20px;
-    max-width: 794px;
-}
-
+/* Header Styles */
 header {
-    display: flex;
-    justify-content: center;
-    margin: 2% 0;
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.avisos, .objetivos {
-    margin-bottom: 15px;
-    text-align: justify;
+.title {
+    font-size: 28px;
+    font-weight: bold;
 }
 
+/* Container Styles */
 .conteiner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 50px;
-
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 20px;
 }
 
-.instrucoes ol li {
-    margin-bottom: 30px;
-    text-align: justify;
-    margin-right: 10%;
+/* Section Styles */
+section {
+    background-color: var(--white);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Subtitle Section */
+.subs {
+    border-left: 5px solid var(--secondary-color);
+}
+
+.sub-title {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+/* Alerts and Objectives */
+.avisos, .objetivos {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.avisos {
+    background-color: var(--danger-bg);
+}
+
+.objetivos {
+    background-color: var(--warning-bg);
+}
+
+.avisos i, .objetivos i {
+    margin-right: 10px;
+    font-size: 18px;
+    margin-top: 2px;
+}
+
+.avisos strong, .objetivos strong {
+    margin-right: 5px;
+}
+
+/* Main Content */
+.main {
+    border-left: 5px solid var(--accent-color);
+}
+
+.title-atividade {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+/* Instructions Lists */
+.instrucoes {
+    padding-left: 20px;
+}
+
+.instrucoes ol {
+    padding-left: 20px;
+}
+
+.instrucoes li {
+    margin-bottom: 10px;
+}
+
+/* Links */
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+/* Response Section */
+.respostas {
+    border-left: 5px solid var(--danger-color);
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--light-border);
+    border-radius: 5px;
+    resize: vertical;
+    font-size: 14px;
+}
+
+/* Footer Section */
+.footer {
+    border-left: 5px solid var(--warning-color);
+}
+
+.parabens {
+    background-color: var(--success-bg);
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    display: block;
+    margin: 15px auto;
+    border: 1px solid var(--light-border);
+}
+
+/* Code Blocks */
+code {
+    background-color: var(--code-bg);
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-family: monospace;
+    border: 1px solid var(--light-border);
+    display: block;
+    padding: 10px;
+    white-space: pre-wrap;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .conteiner {
+        padding: 0 10px;
+    }
+    
+    .title {
+        font-size: 24px;
+    }
+    
+    .sub-title {
+        font-size: 20px;
+    }
+    
+    .title-atividade {
+        font-size: 18px;
+    }
+}
+
+/* Saved content indicator */
+.saved-indicator {
+    color: var(--accent-color);
+    font-size: 12px;
+    margin-top: 5px;
+    display: none;
+}
+
+.saved-indicator.visible {
+    display: block;
 }

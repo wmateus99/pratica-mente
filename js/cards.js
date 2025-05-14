@@ -26,8 +26,9 @@ export const WordLeft = {
     att03: Card("História da Internet", "/pages/assets_atividades/_word/historia_da_internet.pdf", "Aqui você vai conhecer os momentos mais importantes da criação e evolução da internet, desde a ARPANET até os dias atuais. A atividade envolve leitura e organização dessas informações no Word, ajudando a entender como surgiu essa tecnologia essencial no nosso dia a dia.")
 }
 export const InternetLeft = {
-    att01: Card("Atividade 01", "#", "Isso é uma descrição de Internet!"),
-    att02: Card("Atividade 02", "#", "Isso é uma descrição de Internet!")
+    att01: Card("Introdução à Informática", "/pages/assets_atividades/_extracurricular/01.html", "Isso é uma descrição de Internet!"),
+    att02: Card("", "#", "Isso é uma descrição de Internet!"),
+    att03: Card("Atividade 02", "#", "Isso é uma descrição de Internet!"),
 }
 export const PowerPointLeft = {
     att01: Card("Crie sua Apresentação", "/pages/assets_atividades/_powerpoint/mostre_sua_criatividade.pdf", "Esta atividade estimula sua criatividade e suas habilidades no PowerPoint. Você deverá escolher um assunto de seu interesse, pesquisar sobre ele e transformar um conteúdo amplo em uma apresentação simples, visualmente atrativa e fácil de entender."),
@@ -38,8 +39,9 @@ export const PhotoshopLeft = {
     att02: Card("Atividade 02", "#", "Isso é uma descrição de Photoshop!")
 }
 export const ExtracurricularLeft = {
-    att01: Card("Atividade 01", "#", "Isso é uma descrição de Extracurricular!"),
-    att02: Card("Atividade 02", "#", "Isso é uma descrição de Extracurricular!")
+    att01: Card("Introdução à Informática", "/pages/assets_atividades/_extracurricular/01.html", "Avaliar o conhecimento básico sobre o funcionamento e a estrutura do computador, assim como a familiaridade com o uso de sistemas operacionais."),
+    att02: Card("Windows", "/pages/assets_atividades/_extracurricular/02.html", "Avaliar a habilidade de uso do sistema operacional Windows, incluindo personalização e organização de arquivos."),
+    att03: Card("Internet", "/pages/assets_atividades/_extracurricular/03.html", "Avaliar a capacidade de utilizar navegadores, buscar informações com eficiência e entender conceitos de segurança na internet.")
 }
 
 
@@ -69,6 +71,6 @@ export const PhotoshopRigth = {
     att02: Card("Atividade 02", "#", "Isso é uma descrição de Photoshop!")
 }
 export const ExtracurricularRigth = {
-    att01: Card("Atividade 01", "#", "Isso é uma descrição de Extracurricular!"),
-    att02: Card("Atividade 02", "#", "Isso é uma descrição de Extracurricular!")
+    att01: Card("Word", "/pages/assets_atividades/_extracurricular/04.html", "Avaliar a capacidade de usar as ferramentas básicas do Word para criar documentos profissionais."),
+    att02: Card("Excel", "/pages/assets_atividades/_extracurricular/05.html", "Avaliar a capacidade de criar, formatar e fazer cálculos básicos em planilhas.")
 }

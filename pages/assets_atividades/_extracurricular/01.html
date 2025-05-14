@@ -59,5 +59,43 @@
         </section>
 
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get all textareas on the page
+            const textareas = document.querySelectorAll('textarea');
+            
+            // For each textarea
+            textareas.forEach(function(textarea, index) {
+                // Generate a unique key based on the page URL and textarea index
+                const pageUrl = window.location.pathname;
+                const storageKey = `savedText_${pageUrl}_${index}`;
+                
+                // Create saved indicator element
+                const savedIndicator = document.createElement('div');
+                savedIndicator.className = 'saved-indicator';
+                savedIndicator.textContent = 'Conteúdo salvo automaticamente';
+                textarea.parentNode.insertBefore(savedIndicator, textarea.nextSibling);
+                
+                // Load saved content if it exists
+                const savedContent = localStorage.getItem(storageKey);
+                if (savedContent) {
+                    textarea.value = savedContent;
+                }
+                
+                // Save content on input
+                textarea.addEventListener('input', function() {
+                    localStorage.setItem(storageKey, textarea.value);
+                    
+                    // Show saved indicator
+                    savedIndicator.classList.add('visible');
+                    
+                    // Hide indicator after 2 seconds
+                    setTimeout(function() {
+                        savedIndicator.classList.remove('visible');
+                    }, 2000);
+                });
+            });
+        });
+    </script>
 </body>
 </html>
