@@ -13,8 +13,8 @@ function trocarMenu(index) {
     switch (parseInt(index)) {
         case 0:
             labelModulo.innerHTML = "Windows"
-            boxLeft.innerHTML = WindowsLeft.att01 + WindowsLeft.att02
-            boxRigth.innerHTML = WindowsRigth.att01
+            boxLeft.innerHTML = WindowsLeft.att01 + WindowsLeft.att02 + WindowsLeft.att03
+            boxRigth.innerHTML = WindowsRigth.att01 + WindowsRigth.att02 + WindowsRigth.att03
             break
         case 1:
             labelModulo.innerHTML = "Excel"

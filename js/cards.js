@@ -13,7 +13,8 @@ export default function Card(title, link, text) {
 // Cads de Cada Módulo do Lado Esquerdo
 export const WindowsLeft = {
     att01: Card("Pratique Atalhos", "/pages/assets_atividades/_windows/atalhos-teclado.pdf", "O objetivo da atividade é treinar o uso de atalhos do teclado, manipulação de texto no Word e Bloco de Notas, além de ensinar a alternar entre janelas e áreas de trabalho no Windows, usando tarefas simples do dia a dia."),
-    att02: Card("Revise Assuntos", "/pages/assets_atividades/_windows/atividade-revisao.pdf", "Praticar habilidades básicas de manipulação de arquivos, download de imagens da internet, edição de texto no Bloco de Notas e criação de uma colagem simples no Paint.")
+    att02: Card("Revise Assuntos", "/pages/assets_atividades/_windows/atividade-revisao.pdf", "Praticar habilidades básicas de manipulação de arquivos, download de imagens da internet, edição de texto no Bloco de Notas e criação de uma colagem simples no Paint."),
+    att03: Card("Pratique o Mouse", "/pages/assets_atividades/_windows/pratica-do-mouse.pdf", "Nesta atividade, você vai treinar o uso do mouse: clicar, clicar duas vezes, arrastar e soltar, escolhendo menus, abrindo programas, inserindo e salvando arquivos — tudo para ganhar precisão, rapidez e confiança no manuseio do computador.")
 }
 export const ExcelLeft = {
     att01: Card("Planilha Simples", "/pages/assets_atividades/_excel/atividades_de_excel_(simples).pdf", "Nesta atividade, você vai aprender a usar o Excel formatando uma tabela simples. Vai aplicar bordas, centralizar textos, mudar cores e aplicar formatação de moeda. Tudo isso com um passo a passo bem claro para te ajudar a conhecer as ferramentas básicas do programa."),
@@ -26,7 +27,7 @@ export const WordLeft = {
     att03: Card("História da Internet", "/pages/assets_atividades/_word/historia_da_internet.pdf", "Aqui você vai conhecer os momentos mais importantes da criação e evolução da internet, desde a ARPANET até os dias atuais. A atividade envolve leitura e organização dessas informações no Word, ajudando a entender como surgiu essa tecnologia essencial no nosso dia a dia.")
 }
 export const InternetLeft = {
-    att01: Card("Introdução à Informática", "/pages/assets_atividades/_extracurricular/01.html", "Isso é uma descrição de Internet!"),
+    att01: Card("Em Breve", "", "Isso é uma descrição de Internet!"),
     att02: Card("", "#", "Isso é uma descrição de Internet!"),
     att03: Card("Atividade 02", "#", "Isso é uma descrição de Internet!"),
 }
@@ -47,8 +48,9 @@ export const ExtracurricularLeft = {
 
 // Cads de Cada Módulo do Lado Direito
 export const WindowsRigth = {
-    att01: Card("Pratique o Mouse", "/pages/assets_atividades/_windows/pratica-do-mouse.pdf", "Nesta atividade, você vai treinar o uso do mouse: clicar, clicar duas vezes, arrastar e soltar, escolhendo menus, abrindo programas, inserindo e salvando arquivos — tudo para ganhar precisão, rapidez e confiança no manuseio do computador."),
-    att02: Card("Atividade 02", "#", "Isso é uma descrição de Windows!")
+    att01: Card("Missão 01", "/pages/assets_atividades/_windows/_missoes/missoes_01_windows.pdf", "Imagine que você é um técnico de informática e o computador que está em sua frente é o aparelho eletrônico que o cliente trouxe até sua loja para fazer algumas configurações."),
+    att02: Card("Missão 02", "/pages/assets_atividades/_windows/_missoes/missoes_02_windows.pdf", "Você é um técnico de informática e está prestando um atendimento na loja para um cliente que acabou de comprar um computador novo."),
+    att03: Card("Missão 03", "/pages/assets_atividades/_windows/_missoes/missoes_03_windows.pdf", "Você é técnico de informática e foi chamado para configurar o computador novo de uma cliente.")
 }
 export const ExcelRigth = {
     att01: Card("Média de Alunos", "/pages/assets_atividades/_excel/media_de_alunos.pdf", "Você vai criar uma planilha escolar com nomes de alunos e notas dos quatro bimestres. Depois, vai calcular a média de cada aluno e mostrar se ele está aprovado ou reprovado. Um exercício prático para quem quer dominar fórmulas simples e condições no Excel."),
