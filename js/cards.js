@@ -35,7 +35,7 @@ export const PowerPointLeft = {
     att02: Card("Atividade 02", "#", "Isso é uma descrição de PowerPoint!")
 }
 export const PhotoshopLeft = {
-    att01: Card("Atividade 01", "#", "Isso é uma descrição de Photoshop!"),
+    att01: Card("Ajustando Imagem", "/pages/assets_atividades/_photoshop/Atividade_Photoshop_AjustandoImagens.pdf", "A tarefa tem como objetivo ajudar o aluno a aprimorar suas habilidades no Photoshop através da criação de uma composição surreal utilizando imagens de diferentes fontes."),
     att02: Card("Atividade 02", "#", "Isso é uma descrição de Photoshop!")
 }
 export const ExtracurricularLeft = {
@@ -67,7 +67,7 @@ export const PowerPointRigth = {
     att01: Card("Mais em Breve", "#", "Isso é uma descrição vazia de PowerPoint!")
 }
 export const PhotoshopRigth = {
-    att01: Card("Atividade 01", "#", "Isso é uma descrição de Photoshop!"),
+    att01: Card("Texto 3D", "/pages/assets_atividades/_photoshop/photoshop-texto3d.pdf", "Este exercício irá te ajudar a melhorar ainda mais no processo de criação de textos 3D no Photosho."),
     att02: Card("Atividade 02", "#", "Isso é uma descrição de Photoshop!")
 }
 export const ExtracurricularRigth = {
