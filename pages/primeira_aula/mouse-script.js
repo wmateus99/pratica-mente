@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Reset stats
         score = 0;
         targetsClicked = 0;
-        timeLeft = 30; // Reset timer
+        timeLeft = 50; // Reset timer
         
         // Update display
         scoreElement.textContent = score;
