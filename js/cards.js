@@ -39,10 +39,17 @@ export const PhotoshopLeft = {
     att01: Card("Ajustando Imagem", "/pages/assets_atividades/_photoshop/Atividade_Photoshop_AjustandoImagens.pdf", "A tarefa tem como objetivo ajudar o aluno a aprimorar suas habilidades no Photoshop através da criação de uma composição surreal utilizando imagens de diferentes fontes."),
     att02: Card("Atividade 02", "#", "Isso é uma descrição de Photoshop!")
 }
-export const ExtracurricularLeft = {
+export const AapLeft = {
     att01: Card("Introdução à Informática", "/pages/assets_atividades/_extracurricular/01.html", "Avaliar o conhecimento básico sobre o funcionamento e a estrutura do computador, assim como a familiaridade com o uso de sistemas operacionais."),
     att02: Card("Windows", "/pages/assets_atividades/_extracurricular/02.html", "Avaliar a habilidade de uso do sistema operacional Windows, incluindo personalização e organização de arquivos."),
     att03: Card("Internet", "/pages/assets_atividades/_extracurricular/03.html", "Avaliar a capacidade de utilizar navegadores, buscar informações com eficiência e entender conceitos de segurança na internet.")
+}
+export const TecsLeft = {
+    att01: Card("Excel - 01", "/pages/assets_atividades/_tecs/excel/excel01.pdf", "Essa atividade tem como objetivo praticar o uso do Excel e aprimorar os seguintes cálculos matemáticos: Adição, Subtração, Multiplicação e Divisão."),
+    att02: Card("Excel - 02", "/pages/assets_atividades/_tecs/excel/excel02.pdf", "Essa atividade tem como objetivo praticar o uso do Excel e aprimorar o desenvolvimento de planilhas com as seguintes fórmulas básicas: Média, Máximo, Mínimo e Soma."),
+    att03: Card("Excel - 03", "/pages/assets_atividades/_tecs/excel/excel03.pdf", "Essa atividade tem como objetivo praticar o desenvolvimento de planilha no Excel, além de utilizar gráficos e tabelas para facilitar o entendimento de uma base de dados."),
+    att04: Card("Excel - 04", "/pages/assets_atividades/_tecs/excel/excel04.pdf", "Utilizar o Excel para criar uma planilha com nomes, idades e situação (maior ou menor de idade), aplicando a fórmula SE para automatizar o resultado."),
+    att05: Card("Excel - 05", "/pages/assets_atividades/_tecs/excel/excel05.pdf", "Criar uma planilha no Excel utilizando as funções HOJE e AGORA, e aplicar Validação de Dados para controlar os valores de estoque. Finalizar com formatação visual e apresentar ao instrutor."),
 }
 
 
@@ -72,7 +79,11 @@ export const PhotoshopRigth = {
     att01: Card("Texto 3D", "/pages/assets_atividades/_photoshop/photoshop-texto3d.pdf", "Este exercício irá te ajudar a melhorar ainda mais no processo de criação de textos 3D no Photosho."),
     att02: Card("Atividade 02", "#", "Isso é uma descrição de Photoshop!")
 }
-export const ExtracurricularRigth = {
+export const AapRigth = {
     att01: Card("Word", "/pages/assets_atividades/_extracurricular/04.html", "Avaliar a capacidade de usar as ferramentas básicas do Word para criar documentos profissionais."),
     att02: Card("Excel", "/pages/assets_atividades/_extracurricular/05.html", "Avaliar a capacidade de criar, formatar e fazer cálculos básicos em planilhas.")
+}
+export const TecsRigth = {
+    att01: Card("Título", "https://cdn.dicionariopopular.com/imagens/rindo-com-respeito-cke-0.jpg?auto_optimize=low", "None None None"),
+    att02: Card("Título", "https://correio-cdn2.cworks.cloud/fileadmin/user_upload/correio24horas/2018/06/24/suica_2.jpg", "None None None")
 }

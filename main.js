@@ -1,5 +1,5 @@
-import { WindowsLeft, ExcelLeft, WordLeft, InternetLeft, PowerPointLeft, PhotoshopLeft, ExtracurricularLeft } from "./js/cards.js"
-import { WindowsRigth, ExcelRigth, WordRigth, InternetRigth, PowerPointRigth, PhotoshopRigth, ExtracurricularRigth } from "./js/cards.js"
+import { WindowsLeft, ExcelLeft, WordLeft, InternetLeft, PowerPointLeft, PhotoshopLeft, AapLeft, TecsLeft} from "./js/cards.js"
+import { WindowsRigth, ExcelRigth, WordRigth, InternetRigth, PowerPointRigth, PhotoshopRigth, AapRigth, TecsRigth} from "./js/cards.js"
 
 // Variáveis
 const boxLeft = document.querySelector('.list-box-left')
@@ -42,9 +42,14 @@ function trocarMenu(index) {
             boxRigth.innerHTML = PhotoshopRigth.att01
             break
         case 6:
-            labelModulo.innerHTML = "Extracurricular"
-            boxLeft.innerHTML = ExtracurricularLeft.att01 + ExtracurricularLeft.att02 + ExtracurricularLeft.att03
-            boxRigth.innerHTML = ExtracurricularRigth.att01 + ExtracurricularRigth.att02
+            labelModulo.innerHTML = "Atividade Avaliativa Profissional"
+            boxLeft.innerHTML = AapLeft.att01 + AapLeft.att02 + AapLeft.att03
+            boxRigth.innerHTML = AapRigth.att01 + AapRigth.att02
+            break
+        case 7:
+            labelModulo.innerHTML = "Treinamento Essencial de Computação e Sistemas"
+            boxLeft.innerHTML = '<h3><i class="ri-align-bottom"></i> Excel <i class="ri-align-bottom"></i></h3>' + TecsLeft.att01 + TecsLeft.att02 + TecsLeft.att03 + TecsLeft.att04 + TecsLeft.att05
+            boxRigth.innerHTML = boxRigth.innerHTML = '<h3><i class="ri-align-bottom"></i> Em Breve <i class="ri-align-bottom"></i></h3>' + TecsRigth.att01 + TecsRigth.att02
             break
         default:
             labelModulo.innerHTML = '<span style="color:red;" >Algo deu errado no código fonte!</span>'
