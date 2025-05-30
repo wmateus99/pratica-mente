@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    transition: .3s;
+    font-family: "Outfit", sans-serif;
+}
+
+.adm {
+    top: 15px;
+    right: 20px;
+    position: absolute;
+}
+.adm a {
+    outline: none;
+    color: #fff;
+    font-size: 30px;
+    font-style: none;
+    text-decoration: none;
+}
+
+
+.title {
+    color: #fff;
+    display: flex;
+    min-height: 10vh;
+    align-items: center;
+    background  : #004858;
+    justify-content: center;
+}
+
+
+form {
+    display: grid;
+    min-height: 90vh;
+    grid-template: 1fr / 20% 80%;
+}
+
+.box-input, .box-form {
+    gap: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box-input {
+    background: #00a2a2;
+}
+.box-input input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #00000099;
+}
+.box-input select {
+    width: 100%;
+    border: none;
+    font-weight: 700;
+    padding: 10px;
+    outline: none;
+    color: #fff;
+    background: transparent;
+    border-bottom: 2px solid #fff;
+}
+.box-input select option {
+    background: #535353;
+}
+
+.box-form {
+}
+.box-form textarea {
+    padding: 20px;
+    font-size: 20px;
+    width: 50%;
+    height: 50%;
+}
+
+.submit-clear {
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.box-form button {
+    padding: 10px 50px;
+}
+#clearBtn {
+    display: none;
+    color: brown;
+    font-size: 30px;
+}

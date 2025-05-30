@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<title>Área do Professor</title>
+<link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+<main>
+    <h2>Área do Professor</h2>
+
+    <div id="login">
+        <input type="password" id="senha" placeholder="É a mesma senha do ADMIN" />
+        <button id="btnEntrar" onclick="acessarProfessor()">Entrar</button>
+        <p id="erro" class="erro"></p>
+    </div>
+
+    <div id="dados" style="display: none;">
+    <h3>Respostas dos Alunos</h3>
+
+    <div id="filtros">
+        <label for="filtroTurno">Turno</label>
+        <select id="filtroTurno">
+            <option value="">Todos</option>
+            <option>Manhã</option>
+            <option>Tarde</option>
+        </select>
+
+        <label for="filtroDia">Dia da Semana</label>
+        <select id="filtroDia">
+            <option value="">Todos</option>
+            <option>Segunda</option>
+            <option>Terça</option>
+            <option>Quarta</option>
+            <option>Quinta</option>
+            <option>Sexta</option>
+            <option>Sábado</option>
+        </select>
+
+        <label for="filtroHorario">Horários</label>
+        <select id="filtroHorario">
+            <option value="">Todos</option>
+            <option>8h</option><option>9h</option><option>10h</option><option>11h</option>
+            <option>14h</option><option>15h</option><option>16h</option><option>17h</option>
+            <option>8h-10h</option><option>10h-12h</option><option>14h-16h</option><option>16h-18h</option>
+        </select>
+
+        <button onclick="aplicarFiltros()">Filtrar</button>
+    </div>
+
+    <div id="respostas"></div>
+    </div>
+</main>
+
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+<script src="js/firebase.js"></script>
+<script type="module">
+import { validarSenhaProfessor, agruparPorHorario, gerarHTMLRespostas } from './js/auth.js';
+
+let respostasSalvas = [];
+
+window.acessarProfessor = () => {
+    const senha = document.getElementById('senha').value;
+    const erro = document.getElementById('erro');
+    const login = document.getElementById('login');
+    const dados = document.getElementById('dados');
+
+    if (validarSenhaProfessor(senha)) {
+    erro.textContent = '';
+    login.style.display = 'none';
+    dados.style.display = 'block';
+    carregarRespostas(); // Substitui o localStorage
+    } else {
+    erro.textContent = 'Senha incorreta.';
+    }
+};
+
+window.aplicarFiltros = () => {
+    const turno = document.getElementById('filtroTurno').value;
+    const dia = document.getElementById('filtroDia').value;
+    const horario = document.getElementById('filtroHorario').value;
+
+    const filtradas = respostasSalvas.filter(res =>
+    (!turno || res.turno === turno) &&
+    (!dia || res.dia === dia) &&
+    (!horario || res.horario === horario)
+    );
+
+    mostrarRespostas(filtradas);
+};
+
+function mostrarRespostas(lista) {
+    const container = document.getElementById('respostas');
+    container.innerHTML = '';
+    const agrupadas = agruparPorHorario(lista);
+    const html = gerarHTMLRespostas(agrupadas);
+    container.appendChild(html);
+
+    document.querySelectorAll('.excluir').forEach(btn => {
+    btn.addEventListener('click', () => {
+        excluirResposta(btn.dataset);
+    });
+    });
+}
+
+function excluirResposta({ id, nome }) {
+    const confirmado = confirm(`Tem certeza que deseja excluir a resposta de ${nome}?`);
+    if (!confirmado) return;
+
+    db.collection('respostas').doc(id).delete()
+    .then(() => {
+        console.log('Documento excluído com sucesso');
+    })
+    .catch(error => {
+        console.error('Erro ao excluir:', error);
+    });
+}
+
+function carregarRespostas() {
+    db.collection('respostas')
+    .orderBy('timestamp', 'desc')
+    .onSnapshot(snapshot => {
+        respostasSalvas = snapshot.docs.map(doc => ({
+        id: doc.id,
+        ...doc.data()
+        }));
+        mostrarRespostas(respostasSalvas);
+    });
+}
+document.addEventListener("keydown", function(event) {
+        if (event.key === "Enter") {
+        document.getElementById("btnEntrar").click();
+        }
+    });
+</script>
+
+</body>
+</html>

@@ -13,6 +13,13 @@
           "user-select"
         ]
       }
+    ],
+    "meta-viewport": "off",
+    "axe/forms": [
+      "default",
+      {
+        "select-name": "off"
+      }
     ]
   }
 }

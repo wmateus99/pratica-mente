@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Formulário de Dúvidas</title>
+
+    <!-- Link Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!--  -->
+    <!-- Link Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Outfit:wght@100..900&family=Share+Tech&display=swap" rel="stylesheet">
+    <!--  -->
+</head>
+<body>
+    <div class="adm">
+        <a href="./professor.html">
+            <i class="ri-user-settings-fill"></i>
+        </a>
+    </div>
+    <main>
+        <div class="title">
+            <h2>Formulário de Dúvidas</h2>
+        </div>
+        <form id="formAluno">
+            <div class="box-input">
+                <datalist id="cursoList">
+                    <option value="Criança do Futuro"></option>
+                    <option value="Informática Essencial"></option>
+                    <option value="Informática Avançada"></option>
+                    <option value="Designer Gráfico"></option>
+                    <option value="Balconista de Farmácia"></option>
+                    <option value="Operador de Caixa"></option>
+                </datalist>
+
+                <input type="text" name="" id="nome" placeholder="Nome completo" autocomplete="off" required>
+                <input list="cursoList" type="text" name="" id="curso" placeholder="Curso Atual" autocomplete="off" required>
+
+                <select id="turno" required>
+                    <option value="">Turno</option>
+                    <option value="Manhã">Manhã</option>
+                    <option value="Tarde">Tarde</option>
+                </select>
+
+                <select id="dia" required>
+                    <option value="">Dia da semana</option>
+                    <option value="Segunda">Segunda/Terça</option>
+                    <option value="Quarta">Quarta/Quinta</option>
+                    <option value="Sexta">Sexta</option>
+                    <option value="Sábado">Sábado</option>
+                </select>
+
+                <select id="horario" required>
+                    <option value="">Selecione o horário</option>
+                </select>
+            </div>
+            <div class="box-form">
+                <textarea id="duvida" placeholder="Descreva sua dúvida ou ferramenta que deseja se aprimorar..." required></textarea>
+                <div class="submit-clear">
+                    <button type="submit">Enviar</button>
+                    <i id="clearBtn" class="ri-delete-bin-fill"></i>
+                </div>
+            </div>
+        </form>
+    </main>
+
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+<script src="js/firebase.js"></script>
+
+<script type="module">
+    import { popularHorarios } from './js/horarios.js';
+    import { salvarResposta } from './js/main.js';
+
+    const turno = document.getElementById('turno');
+    const dia = document.getElementById('dia');
+
+    turno.addEventListener('change', () => popularHorarios(turno.value, dia.value));
+    dia.addEventListener('change', () => popularHorarios(turno.value, dia.value));
+
+    document.getElementById('formAluno').addEventListener('submit', salvarResposta);
+
+const textarea = document.getElementById('duvida');
+const clearBtn = document.getElementById('clearBtn');
+const storageKey = 'duvida_salva';
+
+// Carrega texto salvo
+window.addEventListener('DOMContentLoaded', () => {
+    const saved = localStorage.getItem(storageKey);
+    if (saved) {
+        textarea.value = saved;
+        clearBtn.style.display = 'block';
+    }
+});
+
+// Salva conteúdo e mostra/oculta o botão
+textarea.addEventListener('input', () => {
+    const value = textarea.value;
+    localStorage.setItem(storageKey, value);
+
+    clearBtn.style.display = value.trim() ? 'block' : 'none';
+});
+
+// Limpa conteúdo e esconde o botão
+clearBtn.addEventListener('click', () => {
+    textarea.value = '';
+    localStorage.removeItem(storageKey);
+    clearBtn.style.display = 'none';
+});
+
+</script>
+</body>
+</html>

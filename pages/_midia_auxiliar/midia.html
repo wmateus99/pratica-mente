@@ -1,0 +1,135 @@
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mídia Auxiliar</title>
+    <style>
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+
+        body {
+        background-color: #121212;
+        color: #e0e0e0;
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        }
+
+        h1 {
+        text-align: center;
+        color: #00ffff;
+        margin-bottom: 30px;
+        }
+
+        .section {
+        margin-bottom: 40px;
+        }
+
+        .section h2 {
+        color: #00ffff;
+        margin-bottom: 15px;
+        border-bottom: 2px solid #00ffff;
+        padding-bottom: 5px;
+        }
+
+        .media-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+        }
+
+        .media-item {
+        background-color: #1e1e1e;
+        border: 1px solid #333;
+        padding: 15px;
+        border-radius: 10px;
+        text-align: center;
+        }
+
+        video, audio {
+        width: 100%;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        }
+
+        .download-btn {
+        display: inline-block;
+        padding: 10px 15px;
+        background-color: #00ffff;
+        color: #000;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background-color 0.3s;
+        }
+
+        .download-btn:hover {
+        background-color: #00bbbb;
+        }
+
+        @media (max-width: 600px) {
+        body {
+            padding: 10px;
+        }
+
+        .media-item {
+            padding: 10px;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+        }
+    </style>
+    </head>
+    <body>
+    <h1>Mídia Auxiliar</h1>
+
+    <div class="section" id="videos">
+        <h2>Vídeos para Download</h2>
+        <div class="media-list">
+            <div class="media-item">
+                <video controls src="./videos/arkanis-trailer-t1.mp4"></video>
+                <a href="./videos/arkanis-trailer-t1.mp4" download class="download-btn">Baixar Vídeo 01</a>
+            </div>
+            <div class="media-item">
+                <video controls src="./videos/arkanis-fim-da-t1.mp4"></video>
+                <a href="./videos/arkanis-fim-da-t1.mp4" download class="download-btn">Baixar Vídeo 02</a>
+            </div>
+            <div class="media-item">
+                <video controls src="video03.mp4"></video>
+                <a href="video03.mp4" download class="download-btn">Baixar Vídeo 03</a>
+            </div>
+            <div class="media-item">
+                <video controls src="video04.mp4"></video>
+                <a href="video04.mp4" download class="download-btn">Baixar Vídeo 04</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="musicas">
+        <h2>Músicas para Download</h2>
+        <div class="media-list">
+            <div class="media-item">
+                <audio controls src="musica01.mp3"></audio>
+                <a href="musica01.mp3" download class="download-btn">Baixar Música 01</a>
+            </div>
+            <div class="media-item">
+                <audio controls src="musica02.mp3"></audio>
+                <a href="musica02.mp3" download class="download-btn">Baixar Música 02</a>
+            </div>
+            <div class="media-item">
+                <audio controls src="musica03.mp3"></audio>
+                <a href="musica03.mp3" download class="download-btn">Baixar Música 03</a>
+            </div>
+            <div class="media-item">
+                <audio controls src="musica04.mp3"></audio>
+                <a href="musica04.mp3" download class="download-btn">Baixar Música 04</a>
+            </div>
+        </div>
+    </div>
+    </body>
+    </html>
