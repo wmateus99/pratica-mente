@@ -58,9 +58,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Ranking estático (será atualizado manualmente)
     const topPlayers = [
-        { name: "Wesley Rafael", score: 1050, level: 105 },
-        { name: "Emilly Yasmin", score: 392, level: 40 },
-        { name: "Gabriel Pontes", score: 300, level: 30 }
+        { name: "Augusto Teixeira", score: 100, level: 11 },
+        // { name: "Wesley Rafael", score: 1050, level: 105 },
+        // { name: "Emilly Yasmin", score: 392, level: 40 },
+        // { name: "Gabriel Pontes", score: 300, level: 30 }
     ];
 
     // Variáveis do jogo
@@ -361,7 +362,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Calculate and display days until ranking reset
     function updateResetCountdown() {
-        const resetDate = new Date('2025-06-14');
+        const resetDate = new Date('2025-08-29');
         const today = new Date();
         
         // Calculate the difference in days

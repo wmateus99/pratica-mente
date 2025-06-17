@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "@ # $ % & * ( ) _ + { } [ ] < > ?",
             "email@exemplo.com.br",
             "Senha: Abc123!@#",
-            "www.site.com.br/pagina?id=123",
+            "²² - ªª / ££ ; ¹¹",
             "Telefone: (11) 98765-4321"
         ]
     };
