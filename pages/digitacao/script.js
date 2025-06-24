@@ -58,7 +58,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Ranking estático (será atualizado manualmente)
     const topPlayers = [
+        { name: "Erick Coelho da Silva", score: 800, level: 81 },
         { name: "Augusto Teixeira", score: 100, level: 11 },
+        
+        //Primeira Edição
         // { name: "Wesley Rafael", score: 1050, level: 105 },
         // { name: "Emilly Yasmin", score: 392, level: 40 },
         // { name: "Gabriel Pontes", score: 300, level: 30 }
